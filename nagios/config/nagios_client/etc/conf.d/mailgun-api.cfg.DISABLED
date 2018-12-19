@@ -1,0 +1,22 @@
+define contact {
+    contact_name                             mailgun
+    alias                                    mailgun
+
+    email                                   peerasan.b@dootvmedia.com	; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+    service_notification_period             24x7
+    service_notification_options            w,u,c,r,f,s
+    service_notification_commands           notify-service-by-mailgun
+    host_notification_period                24x7
+    host_notification_options               d,u,r,f,s
+    host_notification_commands              notify-host-by-mailgun
+}
+
+define command {
+    command_name     notify-service-by-mailgun
+    command_line     curl -s --user "api:key-73437bf71d4b6b8cbfb3b0523d710568" https://api.mailgun.net/v3/mg.open-cdn.com/messages -F from='Monitor <postmaster@mg.open-cdn.com>' -F to=peerasan.b@dootvmedia.com -F subject='Hello from Nagios' -F text='Testing some Mailgun awesomness!'
+}
+
+define command {
+    command_name     notify-host-by-mailgun
+    command_line     curl -s --user "api:key-73437bf71d4b6b8cbfb3b0523d710568" https://api.mailgun.net/v3/mg.open-cdn.com/messages -F from='Monitor <postmaster@mg.open-cdn.com>' -F to=peerasan.b@dootvmedia.com -F subject='Hello from Nagios' -F text='Testing some Mailgun awesomness!'
+}

@@ -1,0 +1,53 @@
+version: "3"
+services:
+    # db-master:
+    #     hostname: db-master
+    #     container_name: db-master
+    #     image: mysql
+    #     ports:
+    #         - 3306:3306
+    #     volumes:
+    #         - ./config/database_cfg/master.cnf:/etc/mysql/conf.d/master.cnf
+    #         - /data/db-master:/var/lib/mysql
+    #     environment:
+    #         - TZ=Asia/Bangkok
+    #         - MYSQL_ROOT_PASSWORD=dootvazws3e
+    #     restart: always
+
+    nginx-php1:
+        hostname: elearning-v2
+        container_name: elearning-v2
+        image: dootvmedia/ubuntu:nginx-php7.1
+       ports: 
+           - 82:80
+           - 8444:443
+        volumes:
+            - ./config/nginx-php/etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./config/nginx-php/etc/nginx/sites-enabled:/etc/nginx/sites-enabled
+            - ./config/nginx-php/etc/nginx/ssl:/etc/nginx/ssl
+            - /data/www:/usr/share/nginx/html
+            - /raid:/raid
+            - ./config/nginx-php/etc/php-fpm:/etc/php/7.1/fpm
+            - ./config/nginx-php/log:/var/log/nginx
+        environment:
+            - TZ=Asia/Bangkok
+            - TEMPLATE_NGINX_HTML=0
+        # privileged: true
+        # network_mode: "host"
+        restart: always
+
+    # haproxy:
+    #     hostname: haproxy
+    #     image: haproxy
+    #     container_name: haproxy
+    #     ports:
+    #         - 8443:443
+    #         - 880:80
+    #         - 1936:1936
+    #     links:
+    #         - nginx-php1
+    #     volumes:
+    #         - ./config/haproxy:/usr/local/etc/haproxy:ro
+    #     environment:
+    #         - TZ=Asia/Bangkok
+    #     restart: always

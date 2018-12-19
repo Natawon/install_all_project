@@ -1,0 +1,12 @@
+2017/06/13 11:38:16 [error] 128#128: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /usr/share/nginx/html/elearning.set.or.th/service/class.http-client-call.php:82
+Stack trace:
+#0 /usr/share/nginx/html/elearning.set.or.th/service/service.php(83): HttpClientCall->curl('https://prod.el...', 'GET', '')
+#1 /usr/share/nginx/html/elearning.set.or.th/index.php(5): session()
+#2 {main}
+  thrown in /usr/share/nginx/html/elearning.set.or.th/service/class.http-client-call.php on line 82" while reading response header from upstream, client: 125.24.61.188, server: elearning.set.or.th, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "th-live-16.open-cdn.com:81"
+2017/06/13 11:38:18 [error] 128#128: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function curl_init() in /usr/share/nginx/html/elearning.set.or.th/service/class.http-client-call.php:82
+Stack trace:
+#0 /usr/share/nginx/html/elearning.set.or.th/service/service.php(83): HttpClientCall->curl('https://prod.el...', 'GET', 'PHPSESSID=v0ms7...')
+#1 /usr/share/nginx/html/elearning.set.or.th/index.php(5): session()
+#2 {main}
+  thrown in /usr/share/nginx/html/elearning.set.or.th/service/class.http-client-call.php on line 82" while reading response header from upstream, client: 125.24.61.188, server: elearning.set.or.th, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "th-live-16.open-cdn.com:81"

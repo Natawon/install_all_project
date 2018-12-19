@@ -1,0 +1,27 @@
+2017/08/30 21:43:27 [crit] 21#21: *1 connect() to unix:/var/run/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 49.228.118.40, server: localhost, request: "GET /info.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "th-live-17.open-cdn.com"
+2017/08/30 21:58:31 [error] 20#20: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 179.208.19.33, server: localhost, request: "GET /cgi/common.cgi HTTP/1.0", upstream: "fastcgi://unix:/var/run/php/php-fpm.sock:", host: "27.131.144.61"
+2017/08/30 21:58:32 [error] 21#21: *8 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 179.208.19.33, server: localhost, request: "GET /stssys.htm HTTP/1.0", upstream: "fastcgi://unix:/var/run/php/php-fpm.sock:", host: "27.131.144.61"
+2017/08/30 21:58:35 [error] 17#17: *11 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 179.208.19.33, server: localhost, request: "POST /command.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php/php-fpm.sock:", host: "27.131.144.61"
+2017/08/30 22:30:07 [emerg] 31#31: no servers are inside upstream in /etc/nginx/nginx.conf:38
+2017/08/30 22:30:56 [emerg] 32#32: "location" directive is not allowed here in /etc/nginx/nginx.conf:81
+2017/08/30 22:30:57 [emerg] 33#33: "location" directive is not allowed here in /etc/nginx/nginx.conf:81
+2017/08/30 22:31:55 [emerg] 34#34: "server_tokens" directive is duplicate in /etc/nginx/nginx.conf:96
+2017/08/30 22:32:55 [emerg] 35#35: host not found in upstream "wowza" in /etc/nginx/conf.d/default.conf:18
+2017/08/30 22:33:27 [emerg] 36#36: "sendfile" directive is duplicate in /etc/nginx/conf.d/default.conf:7
+2017/08/30 22:33:30 [emerg] 37#37: "sendfile" directive is duplicate in /etc/nginx/conf.d/default.conf:7
+2017/08/30 22:34:08 [emerg] 38#38: "tcp_nodelay" directive is duplicate in /etc/nginx/conf.d/default.conf:9
+2017/08/30 22:35:17 [emerg] 39#39: "server_tokens" directive is duplicate in /etc/nginx/conf.d/default.conf:10
+2017/08/30 22:36:03 [emerg] 40#40: "server_tokens" directive is duplicate in /etc/nginx/conf.d/default.conf:10
+2017/08/30 22:36:04 [emerg] 41#41: "server_tokens" directive is duplicate in /etc/nginx/conf.d/default.conf:10
+2017/08/30 22:37:02 [emerg] 42#42: "keepalive_timeout" directive is duplicate in /etc/nginx/conf.d/default.conf:11
+2017/08/30 22:38:36 [emerg] 43#43: "ssl_prefer_server_ciphers" directive is duplicate in /etc/nginx/nginx.conf:126
+2017/08/30 22:39:30 [emerg] 44#44: duplicate location "/" in /etc/nginx/conf.d/default.conf:22
+2017/08/30 22:40:26 [emerg] 45#45: mkdir() "/var/cache/nginx/wowza_cache_temp" failed (2: No such file or directory)
+2017/08/30 22:40:29 [emerg] 46#46: mkdir() "/var/cache/nginx/wowza_cache_temp" failed (2: No such file or directory)
+2017/08/30 22:41:50 [emerg] 51#51: the same path name "/var/tmp/nginx/proxy" used in /etc/nginx/nginx.conf:68 and in /etc/nginx/nginx.conf:153
+2017/08/30 22:43:04 [emerg] 52#52: the same path name "/var/tmp/nginx/proxy" used in /etc/nginx/nginx.conf:68 and in /etc/nginx/nginx.conf:153
+2017/08/30 22:43:08 [emerg] 53#53: the same path name "/var/tmp/nginx/proxy" used in /etc/nginx/nginx.conf:68 and in /etc/nginx/nginx.conf:153
+2017/08/30 22:44:47 [emerg] 54#54: the same path name "/var/tmp/nginx/proxy" used in /etc/nginx/nginx.conf:68 and in /etc/nginx/nginx.conf:153
+2017/08/30 22:44:50 [emerg] 55#55: the same path name "/var/tmp/nginx/proxy" used in /etc/nginx/nginx.conf:68 and in /etc/nginx/nginx.conf:153
+2017/08/30 22:46:41 [emerg] 61#61: the same path name "/var/tmp/nginx/proxy" used in /etc/nginx/nginx.conf:68 and in /etc/nginx/nginx.conf:153
+2017/08/30 22:48:12 [notice] 64#64: signal process started

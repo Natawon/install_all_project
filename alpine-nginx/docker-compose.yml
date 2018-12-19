@@ -1,0 +1,17 @@
+version: "3"
+services:
+    alpine-nginx:
+        hostname: nginx
+        container_name: nginx
+        image: nginx:mainline-alpine
+        ports: 
+            - 80:80
+            - 443:443
+        volumes:
+            - ./data/nginx/log:/var/log/nginx
+            - ./config/nginx/conf.d:/etc/nginx/conf.d
+            - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./data/www:/usr/share/nginx/html
+        environment:
+            - TZ=Asia/Bangkok
+        restart: always

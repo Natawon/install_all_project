@@ -1,0 +1,31 @@
+[mysqld]
+server-id=1
+binlog_format=ROW
+log_bin = /var/log/mysql/mysql-bin.log
+
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/slow.log
+long_query_time = 3
+#log_queries_not_using_indexes = 1
+
+innodb_log_file_size = 32M
+innodb_flush_log_at_trx_commit=1
+sync_binlog=1
+binlog_do_db=e_learning
+
+
+
+innodb_buffer_pool_size = 64M
+max_connections = 1000
+thread_cache_size = 8
+
+query_cache_type = 1
+query_cache_limit = 256K
+query_cache_min_res_unit = 2k
+query_cache_size = 80M
+
+
+tmp_table_size= 64M
+max_heap_table_size= 64M
+wait_timeout=60
+

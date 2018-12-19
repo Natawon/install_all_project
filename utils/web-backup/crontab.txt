@@ -1,0 +1,3 @@
+0 0 * * * /data/utils/AutoMySQLBackup/automysqlbackup -b -c /data/utils/AutoMySQLBackup/automysqlbackup.conf
+0 0 * * * /data/utils/website-backup.sh
+

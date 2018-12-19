@@ -1,0 +1,8 @@
+49.228.118.40 - - [30/Aug/2017:21:43:27 +0700] "GET /info.php HTTP/1.1" 502 537 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36" "-"
+49.228.118.40 - - [30/Aug/2017:21:46:01 +0700] "GET /info.php HTTP/1.1" 200 90380 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36" "-"
+179.208.19.33 - - [30/Aug/2017:21:58:31 +0700] "GET /cgi/common.cgi HTTP/1.0" 404 16 "-" "Wget(linux)" "-"
+179.208.19.33 - - [30/Aug/2017:21:58:32 +0700] "GET /stssys.htm HTTP/1.0" 404 16 "-" "Wget(linux)" "-"
+179.208.19.33 - - [30/Aug/2017:21:58:34 +0700] "GET / HTTP/1.0" 200 612 "-" "Wget(linux)" "-"
+179.208.19.33 - - [30/Aug/2017:21:58:36 +0700] "POST /command.php HTTP/1.0" 404 16 "-" "Wget(linux)" "-"
+49.228.118.40 - - [30/Aug/2017:22:48:26 +0700] "GET / HTTP/1.1" 200 133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36" "-"
+49.228.118.40 - - [30/Aug/2017:22:48:31 +0700] "GET / HTTP/1.1" 200 133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36" "-"

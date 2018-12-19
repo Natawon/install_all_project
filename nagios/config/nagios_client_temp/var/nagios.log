@@ -1,0 +1,20 @@
+[1502165182] Nagios 4.3.2 starting... (PID=20)
+[1502165182] Local time is Tue Aug 08 04:06:22 UTC 2017
+[1502165182] LOG VERSION: 2.0
+[1502165182] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1502165182] qh: core query handler registered
+[1502165182] nerd: Channel hostchecks registered successfully
+[1502165182] nerd: Channel servicechecks registered successfully
+[1502165182] nerd: Channel opathchecks registered successfully
+[1502165182] nerd: Fully initialized and ready to rock!
+[1502165182] wproc: Successfully registered manager as @wproc with query handler
+[1502165182] wproc: Registry request: name=Core Worker 31;pid=31
+[1502165182] wproc: Registry request: name=Core Worker 32;pid=32
+[1502165182] wproc: Registry request: name=Core Worker 30;pid=30
+[1502165182] wproc: Registry request: name=Core Worker 33;pid=33
+[1502165182] wproc: Registry request: name=Core Worker 34;pid=34
+[1502165182] wproc: Registry request: name=Core Worker 35;pid=35
+[1502165183] Successfully launched command file worker with pid 41
+[1502165208] Caught SIGTERM, shutting down...
+[1502165208] Successfully shutdown... (PID=20)
+[1502165208] Event broker module 'NERD' deinitialized successfully.

@@ -1,0 +1,4 @@
+
+0 0 * * * /data/utils/AutoMySQLBackup/automysqlbackup -b -c /data/utils/AutoMySQLBackup/automysqlbackup.conf
+0 2 * * * /data/utils/website-backup.sh
+0 0 * * 2 docker exec elearning-v3 bash -c "cd /usr/share/nginx/html/elearning.set.or.th/api/;php artisan geoip:update;"

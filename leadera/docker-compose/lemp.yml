@@ -1,0 +1,30 @@
+version: "2"
+services:
+    nginx-php:
+        image: dootvmedia/nginx-php:master
+        container_name: nginx-php
+        ports: 
+            - 80:80
+        volumes:
+            - /data/nginx/etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+            - /data/nginx/etc/nginx/sites-enabled:/etc/nginx/sites-enabled
+            - /data/nginx/etc/nginx/ssl:/etc/nginx/ssl
+            - /data/www:/usr/share/nginx/html
+            - /data/nginx/etc/php/php.ini:/etc/php5/fpm/php.ini
+        environment:
+            - TZ=Asia/Bangkok
+            - TEMPLATE_NGINX_HTML=0
+        restart: always
+        
+    mysql:
+        image: mysql
+        container_name: mysql
+        ports:
+            - 3306:3306
+        volumes:
+            - /data/mysql:/var/lib/mysql
+        environment:
+            - TZ=Asia/Bangkok
+            - MYSQL_ROOT_PASSWORD=password
+        restart: always
+

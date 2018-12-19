@@ -1,0 +1,3 @@
+#*/30 * * * * /data/utils/gen-reports.sh >/dev/null 2>&1
+*/30 * * * * /data/utils/get-wowza-log.sh >/dev/null 2>&1
+*/30 * * * * /data/utils/gen-reports-v2.sh >/dev/null 2>&1
