@@ -5,7 +5,10 @@ $msg = $argv[3]; // message
 $msg_txt = str_replace('\n', "\n", $msg);
 
 function send_message($to, $msg_txt){
-    $strAccessToken = "llOjhDVr2UD+IWgaMdd0YJ88DHXE9MxUj06hFo1qJx1gRhBM4XGDfLTPPRy5fwVt5Xq+3S9PclaTIglmGWYgJp6Z6KTG6ruHr6q/ErkcM0lkz5+JeB5ky0z2TjgBt+ro3Uqs4/qeyLJLUyX9br0eNgdB04t89/1O/w1cDnyilFU=";
+    $strAccessToken = "
+YqM1tw20f6g2y8QaOR5KGincPZ9VWSwfIruGxshqlc4wYbnf3WMsvMoW9oPmMBPyqYyf9KdcGye+MrIf4VV51uMvzNv/pBmD6Z1nw03p22L2ZDzhRrgNbOnVAZlwgcC7H2L4R9/O2D24orbu8tOW3gdB04t89/1O/w1cDnyilFU=
+
+";
     $strUrl = "https://api.line.me/v2/bot/message/push";
 
     $arrHeader = array();
